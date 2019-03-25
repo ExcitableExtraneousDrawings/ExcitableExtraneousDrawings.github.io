@@ -1,0 +1,47 @@
+/* Collapsible styling */
+.collapsible {
+  padding: 10px 15px;
+  background-color: lightyellow;
+}
+
+.collapsible > input[type="checkbox"] {
+  display: none;
+  visibility: hidden;
+}
+
+.collapsible > label {
+  display: block;
+}
+
+.collapsible > label:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.collapsible > label > * {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Collapsible visibility logic */
+.collapsible > section {
+  height: 0px;
+  overflow: hidden;
+}
+
+.collapsible input ~ label > *:before {
+  content: "🙂";
+  display: inline;
+  padding-right: 5px;
+}
+
+.collapsible input:checked ~ label > *:before {
+  content: "🙃";
+  display: inline;
+  padding-right: 5px;
+}
+
+.collapsible input:checked ~ section {
+  height: auto;
+}

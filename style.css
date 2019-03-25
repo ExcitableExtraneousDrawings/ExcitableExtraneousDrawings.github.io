@@ -1,0 +1,19 @@
+abbr, abbr a {
+  text-decoration: underline red dotted;
+}
+
+.heading-image {
+  text-align: center;
+}
+
+.heading-image img {
+  max-height: 200px;
+}
+
+h2 + .heading-image {
+  margin-top: -1em;
+}
+
+.youtube-video {
+  text-align: center;
+}

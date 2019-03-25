@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sancta.cmptr.nl</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html">
+  	<h1>Recursieve tekeningen met Python</h1>
+  	<div style="text-align:center;">
+  		<img src="img/Kochsim.gif" />
+  	</div>
+
+  	<h2>Tekenen met <code>turtle</code></h2>
+	
+  	<p>Python heeft een module waarmee je met een zogenaamde 'turtle' op het scherm kan tekenen. Je kan alle functies uit de module importeren met <code>from turtle import *</code></p>
+
+  	<p>Je bestuurt hiermee een pen die over het scherm beweegt en een lijn achterlaat. Met de functies <code>left(graden)</code> en <code>right(graden)</code> draai je om je as heen. Met <code>forward(pixels)</code> en <code>backward(pixels)</code> ga je voor- en achteruit, en laat je een lijn achter.</p>
+
+  	<p>In de documentatie van Python over de <a href="https://docs.python.org/3.3/library/turtle.html?highlight=turtle"><code>turtle</code> module</a> kan je alle beschikbare functies en een aantal voorbeelden vinden. Met bijvoorbeeld <code>speed(0)</code> kan je sneller tekenen. En <code>color("red")</code> levert een rode lijn op.</p>
+
+  	<p></p>
+
+  	<p><b>Opdracht 1:</b> <a href="https://repl.it/@confiks/Turtle-1">Klik hier</a> voor een simpel voorbeeld van een vierkant. Pas het voorbeeld aan zodat je een rode vierkant hebt en een grotere blauwe vierkant. Het is prima als er een verbindende lijn tussen de twee vierkanten zit (maar dat kan je voorkomen met <code>penup</code> en <code>pendown</code>).
+
+  	<p><b>Optionele opdracht:</b> Pas het voorbeeld aan zodat je nog maar één <code>forward</code> en één <code>right</code> aanroep gebruikt. Je moet een <a href="https://cscircles.cemc.uwaterloo.ca/7c-loops-nl/">loop</a> zoals <code>while</code> of <code>for</code> gebruiken.</p>
+
+  	<h3>Recursieve functies</h3>
+
+  	<p>Je kan in Python zelf functies definiëren met het <code>def</code> keyword. Functies zorgen ervoor dat je programma korter wordt, beter gestructureerd, en in onderdelen herbruikbaar. Hier is een voorbeeld van een functie die hallo tegen je zegt:</p>
+
+  	<pre><code>def zeghallo(naam):
+  print("Hallo " + naam)</code></pre>
+
+  	<p>Je kan de functie aanroepen door bijvoorbeeld <code>zeghallo("Python")</code> te schrijven.</p>
+
+  	<p>Functies kunnen ook zichzelf aanroepen. Dat noem je een recursieve functie.</p>
+
+  	<p><b>Opdracht 2:</b> <a href="https://repl.it/@confiks/Turtle-2">Klik hier</a> om de functie hierboven uit te voeren. Voeg een extra opdracht, onder de <code>print</code>, aan de functie toe: <code>zeghallo(naam)</code>. Wat gebeurt er? Wat gaat er mis?</p>
+
+  	<p>Recursieve functies hebben altijd een stopvoorwaarde nodig, waarmee besloten wordt om te stoppen met de recursie. Anders gaat het eindeloos door.</p>
+
+  	<p><b>Opdracht 3:</b> Bekijk de code <a href="https://repl.it/@confiks/Turtle-3">hier</a>. De code gaat eindeloos door (tot Python ermee ophoudt). Voeg een <code>if</code> toe met de juiste voorwaarde, zodat de countdown op 0 ophoudt, en er "Boem!" wordt geprint.</p>
+
+  	<h2>Een recursieve spiraal</h2>
+  	<div style="text-align:center;">
+  		<img width="200" src="img/spiraal.png" />
+  	</div>
+
+  	<p>Zie het plaatje van een rechthoekige spiraal hierboven. Hij is van buiten naar binnen getekend. Welke stappen zet je als je zo'n soort figuur op papier tekent? Het lijkt natuurlijk op een vierkant, maar wat gebeurt er met de lengte van de lijnen als je verder naar binnen toe gaat?</p>
+
+  	<p><b>Opdracht 4:</b> Gebruik de Repl.it link van opdracht 1 om een spiraal te tekenen. Dat mag gewoon met heel veel <code>forward</code> en <code>right</code> aanroepen, of met een loop en een extra variabele.</p>
+
+  	<p><b>Opdracht 5:</b> Bekijk de code <a href="https://repl.it/@confiks/Turtle-4">hier</a> en voer het uit. Er mist weer een stopvoorwaarde. Voeg de stopvoorwaarde toe, zodat er niet getekend wordt met negatieve lengtes.</p>
+
+  	<h3>Sierpinski-kromme</h3> 
+
+  	<div style="text-align: center">
+  		<img src="img/koch_0.png">
+  		<img src="img/koch_1.png">
+  		<img src="img/koch_2.png">
+  		<img src="img/koch_3.png">
+  	</div>
+
+  	<p><b>Opdracht 6:</b> Bekijk de opvolging van figuren hier. Kan je een recursieve functie maken die deze figuren kan tekenen? Misschien zie je dat elk lijnstuk in elke stap steeds uit drie delen bestaat. Het eerste deel is altijd recht, het tweede deel is óf een driehoek óf recht, en het derde deel is ook altijd recht.</p>
+
+</div>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>informatica.cmptr.nl</title>
+  <base target="_blank">
+
+  <link rel="stylesheet" href="style/normalize.css" />
+  <link rel="stylesheet" href="style/stackedit.css" />
+  <link rel="stylesheet" href="style/github-fork-ribbon.css" />
+  <link rel="stylesheet" href="style/collapsible.css" />
+  <link rel="stylesheet" href="style/user.css" />
+</head>
+
+<body class="stackedit">
+  <a class="github-fork-ribbon" href="https://github.com/ExcitableExtraneousDrawings/excitableextraneousdrawings.github.io" data-ribbon="Bekijk de broncode"></a> 
+
+  <div class="stackedit__html">
+    <h1>Week 1</h1>
+
+    <h2>Programmeren</h2>
+    <div class="heading-image" style="background-color: #A5CFE8;">
+      <img src="img/programming.png" />
+    </div>
+
+    <p>Het hoofdonderwerp van deze periode is <abbr><a href="https://nl.wikipedia.org/wiki/Programmeren_(computer)">programmeren</a></abbr>. Programmeren is het proces van ontwerpen, schrijven (<abbr>coden</abbr>), testen en analyseren van een <abbr>computerprogramma</abbr>. Een computerprogramma bestaat uit een <abbr>reeks van instructies</abbr> in een bepaalde <abbr>programmeertaal</abbr> die de computer stap voor stap kan uitvoeren. De <abbr>programmeur</abbr> – jij, straks! – bepaalt wat die instructies zijn.</p>
+
+    <div class="collapsible">
+      <input id="5eb49fcedcae" type="checkbox">
+      <label for="5eb49fcedcae">
+        <h3>De processor, miljarden transistoren en machinetaal</h3>
+      </label>
+
+      <section>
+        <p>Het uitvoeren van een programma in een computer wordt gedaan door de <abbr><a href="https://nl.wikipedia.org/wiki/Processor_(computer)">processor</a></abbr> (of central processing unit, CPU). Deze bestaat uit <a href="https://en.wikipedia.org/wiki/Transistor_count#Microprocessors">miljarden</a> kleine schakelaars die elkaar aan (1) of uit (0) kunnen zetten: <abbr>transistoren</abbr>. Er loopt elektriciteit door de processor heen, en de <abbr>staat</abbr> (aan of uit) van de schakelaars bepaalt welke informatie er opgeslagen is en welke berekeningen er uitgevoerd worden.</p>
+
+        <p>In het filmpje hieronder zie je een uitvergrootte processor van 42.370 transistoren, elk met een LED-lampje, zodat het goed te zien is wat er gebeurt. <a href="http://www.visual6502.org/JSSim/index.html">Hier</a> is ook nog een mooi visueel voorbeeld (druk op de zwarte play-knop).</p>
+
+        <div class="youtube-video">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/lNa9bQRPMB8?cc_load_policy=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <p>De processor 'begrijpt' alleen instructies in <abbr><a href="https://nl.wikipedia.org/wiki/Machinetaal">machinetaal</a></abbr>. Dit zijn hele simpele instructies zoals "tel deze getallen bij elkaar op" en "voer een ander deel van het programma uit". Niet erg handig om mee te programmeren. Daarom zijn er programmeertalen gemaakt zodat je de details van machinetaal niet hoeft te kennen. De programmeertaal wordt vooraf vertaald naar machinetaal door een <abbr>compiler</abbr>, of wordt tijdens het uitvoeren pas vertaald door een <abbr>interpreter</abbr> (zoals bij Python).</p>
+
+        <p>Er zijn veel verschillende programmeertalen. Bij sommige <abbr>lagere programmeertalen</abbr> zoals <abbr>C of C++</abbr> heb je nog veel te maken met details over hoe de computer werkt. Bijvoorbeeld met <abbr>geheugenadressen</abbr> en <abbr>system calls</abbr>.</p>
+
+        <p>Bij <abbr>hogere programmeertalen</abbr> zoals Python of Javascript hoef je minder van deze details te weten.  Deze talen werken op een hoger <abbr>abstractieniveau</abbr>. Het nadeel is wel dat deze talen soms langzamer werken of minder mogelijkheden bieden.</p>
+      </section>
+    </div>
+
+    <p>Waarom zou je willen leren programmeren? Mijn drie belangrijkste redenen:</p>
+
+    <ol>
+      <li><b>Het leert je op een creatieve manier problemen oplossen.</b> Je zal problemen moeten opdelen in kleine stukjes, patronen in het probleem herkennen en instructies maken die de computer kan 'begrijpen' en uitvoeren. Er zijn veel verschillende oplossingen waarbij je creatief moet omgaan met de mogelijkheden.</li>
+      <li><b>Kennis van programmeren kan je helpen bij elke studie of interesse.</b> Computers zijn de werkpaarden van de 21<sup>e</sup> eeuw. Of je nou een taalkundige analyse moet maken, real-time de beurskoerzen wil bijhouden, wilt voorspellen hoe het klimaat zich zal ontwikkelen, je automatisch een <a href="https://rednuht.org/genetic_cars_2/">spel wilt oplossen</a>, of <a href="https://www.shadertoy.com/view/WdB3zz">visuele kunst</a> wil maken: het begint met de kennis van een programmeertaal.</li>
+      <li><b>Er is veel behoefte aan mensen met kennis van programmeren in de arbeidsmarkt.</b> Er valt een hoop geld te verdienen met goede kennis van programmeren. Dat hoeft niet perse als softwareontwikkelaar; ook in het (project)management, de uitvoering en ondersteuning is het goed om kennis van programmeren te hebben.</li>
+    </ol>
+
+    <h2>Python</h2>
+    <div class="heading-image">
+      <a href="https://xkcd.com/353#ctitle">
+        <img src="img/python-xkcd-wide.png" />
+      </a>
+    </div>
+
+    <p><abbr>Python</abbr> is een programmeertaal die goed geschikt is om als eerste te leren. Ik maak graag gebruik van een <a href="https://cscircles.cemc.uwaterloo.ca/nl/">cursus</a> van de <em>University of Waterloo</em>. Deze legt alles helder en in het Nederlands uit, en biedt interactieve opgaven. Er is ook een <a href="https://cscircles.cemc.uwaterloo.ca/visualize#code=eerste+%3D+2%0Atweede+%3D+3%0Aderde+%3D+eerste+*+tweede%0Atweede+%3D+derde+-+eerste%0Aeerste+%3D+eerste+%2B+tweede+%2B+derde%0Aderde+%3D+tweede+*+eerste&mode=display&raw_input=&curInstr=0">handige visualisatietool</a>, waarmee je stap voor stap door een programma kan lopen.</p>
+
+    <p>Programmeren is soms best lastig! Wees niet bang om een halve oplossing gewoon maar uit te proberen, tegen vage foutmeldingen aan te lopen of even vast te zitten. Tegen iemand praten over een probleem kan al helpen. Niemand aanwezig (thuis)? Zelfs praten tegen een <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">badeendje</a> kan helpen!</p>
+
+    <p><b>Opdracht 1:</b> Ga naar <a href="https://cscircles.cemc.uwaterloo.ca/nl/">de website van de cursus</a> en maak de hoofdstukken "0: Hallo", "01: Variabelen" en "01E: Errors". Je mag een account maken zodat je voortgang wordt opgeslagen, maar dat hoeft niet.</p>
+
+    <h2>GitHub</h2>
+    <div class="heading-image">
+      <img src="img/git-github.png" />
+    </div>
+
+    <p>GitHub is een website die gemaakt is om makkelijk <abbr><a href="https://nl.wikipedia.org/wiki/Broncode">broncode</a></abbr> en andere bestanden met elkaar te delen, en samen te werken aan een project. Het is al ruim 10 jaar de meest populaire website voor <abbr>softwareontwikkelaars</abbr> en artiesten om hun projecten inzichtelijk te maken voor anderen.</p>
+
+    <p>GitHub maakt gebruik van het programma <code>git</code>, een <abbr><a href="https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control">versiebeheersysteem (VCS)</a></abbr>. Met <code>git</code> kan je bijvoorbeeld de code van iemand anders ophalen (door een <abbr>pull</abbr> te doen), je wijzigingen opslaan (in een <abbr>commit</abbr>), en je commits versturen (met een <abbr>push</abbr>).
+
+    <p><b>Opdracht 2:</b> Voor latere opdrachten heb je een account op GitHub nodig. We gaan ook een aantal websites gebruiken die gekoppeld kunnen worden aan GitHub. Zo hoef je maar één keer je wachtwoord in te typen. <a href="https://github.com/join">Maak een account op GitHub aan</a>. Kies een redelijke gebruikersnaam, vul je emailadres goed in en vergeet je wachtwoord niet.</p>
+
+    <p><b>Opdracht 3:</b> Je krijgt een mailtje van GitHub. Klik op de link die daarin staat om je emailadres te bevestigen.</p>
+
+    <div class="collapsible">
+      <input id="d663bd873d93" type="checkbox">
+      <label for="d663bd873d93">
+        <h3>Open source, closed source en samenwerken</h3>
+      </label>
+
+      <section>
+        <p>Bijna alles op GitHub is gepubliceerd met een <abbr><a href="https://www.iusmentis.com/computerprogrammas/opensourcesoftware/">open source licentie</a></abbr>. Dat betekent dat de auteur toestemming geeft aan iedereen om zijn of haar code te kopiëren, aan te passen, opnieuw te publiceren en er eventueel geld aan te verdienen. Als je de auteur van iets bent – of dat nou een boek, tekening of software is – heb je het <abbr><a href="https://www.iusmentis.com/auteursrecht/">auteursrecht</a></abbr>, en mag jij beslissen hoe andere mensen dat <abbr><a href="https://www.iusmentis.com/auteursrecht/nl/vvv/werken/#werk">werk</a></abbr> gebruiken.</p>
+
+        <p>Van heel veel software die je gebruikt kan je de broncode niet bekijken; deze is <abbr>closed source</abbr>. Bijvoorbeeld iOS op je telefoon, Windows op je computer, en de meeste apps of programma's die je gebruikt. Bedrijven en auteurs willen vaak hun producten niet open source maken, omdat ze bang zijn dat de concurrentie met hun idee aan de haal gaat of zelfs kloont.</p>
+
+        <p>Dat bijna alles op GitHub open source is, heeft wel het effect dat mensen sneller geneigd zijn met elkaar samen te werken. Ze bieden hun wijzigingen vaak aan bij de oorspronkelijke auteur om het project verbeteren. Dat werkt met een <abbr><a href="https://www.youtube.com/watch?v=YTbRzhQju4c">pull request (PR)</a></abbr>. Eerst maak je een kopie van het project (een <abbr>fork</abbr>), dan maak je wijzigingen in de kopie (met een <abbr>commit</abbr>), en daarna open je een pull request om de wijzigingen voor te stellen aan de oorspronkelijke auteur.</p>
+
+        <p>De website die je nu aan het lezen bent is ook <a href="https://github.com/ExcitableExtraneousDrawings/excitableextraneousdrawings.github.io">open source</a>, en je kan wijzigingen voorstellen met een PR. Dus zie je (spel)fouten of heb je een sugesstie<!-- goed gevonden! -->? <a href="https://www.youtube.com/watch?v=YTbRzhQju4c">Maak een PR</a> of issue aan.</p>
+
+        <p>GitHub zelf is overigens niet open source. Er is sinds een aantal jaar wel een goed open source alternatief: <a href="https://gitlab.com/gitlab-org/gitlab-ce/">Gitlab</a>. Het programma Git is van een andere auteur (Linus Torvalds, ook de ontwikkelaar van Linux), en wel altijd open source geweest.</p>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>
